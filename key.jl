@@ -22,14 +22,15 @@ function spincols(k)
     end 
 end
 
+
+
 function spin(q,n)
+    R = vec(q)
+    l =  length(R)
     k = copy(q)
     for i in 1:n
-        if isodd(i)
-            spincols(k)
-        else
-            spinrows(k)
-        end
+        p = R[guard(i,l)]
+        k[p,:] = map(x -> roll(x,p), k[p,:])
     end
     k
 end

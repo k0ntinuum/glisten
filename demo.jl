@@ -29,7 +29,7 @@ end
 function codedemo()
 
     printkey(k)
-    for i in 500000000:500000020
+    for i in 500000000:500000200
         #p = text(t)
         p = nth_word(i)
         c  = encrypt(p,k,r)

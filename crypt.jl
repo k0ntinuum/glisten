@@ -1,9 +1,4 @@
-function guard(x :: Int64, p :: Int64) :: Int64
-    while x > n
-        x -= n
-    end
-    x
-end
+
 
 function encrypt(p, q, r)
     R = vec(q)
