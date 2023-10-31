@@ -10,6 +10,7 @@ include("demo.jl")
 
 r = 100
 #alph ="O|23456789ABCDEF"
-alph = "~ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#alph = "~ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+alph = "O|@"
 n = length(alph)
 k = key(n)
